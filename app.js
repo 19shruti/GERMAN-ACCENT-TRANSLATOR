@@ -8,8 +8,7 @@ var outputBox=document.querySelector("#OUTPUT");
 // };
 
 
-function clickHandler(){
-outputBox.innerText = "ASDFG" + textInput.value
+function clickHandler(){outputBox.innerText = "ASDFG" + textInput.value
 };
 btnTranslate.addEventListener("click", clickHandler);
 
