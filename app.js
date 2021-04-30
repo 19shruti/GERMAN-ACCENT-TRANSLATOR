@@ -1,24 +1,28 @@
 var btnTranslate=document.querySelector("#btn-translate");
 var textInput = document.querySelector("#text-input");
 var outputBox=document.querySelector("#OUTPUT");
-var serverURL=https://orthosie-old-english-translator-v1.p.rapidapi.com/oldenglish.json"
+var serverURL="https://api.funtranslations.com/translate/german-accent.json"
 // function clickHandler()
 // {
 // console.log("clicked ! ");
 // console.log("input ::", textInput.value);
 // };
 
-function getTranslatedURL(text)
+function getTranslatedURL(input)
 {
-    return serverURL+"?"+"text="+text;
+    return serverURL+"?"+"text="+input;
 }
 
 function clickHandler(){
-    var inputT=textInput.value;
-    fetch(getTranslatedURL(inputT))
-    .then(Response=>Response.json)
-    .then(json=>console.log(json.contents.translated))
-    .catch(errorHandler)
+    var inputT=textInput.value;  //taking input
+    fetch(getTranslatedURL(inputT)) //feching input
+    .then(Response=>Response.json()) //get input respose
+    .then(json=>
+        {
+            var translatedText=json.contents.translated;
+            outputBox.innerText=translatedText;
+        })
+    // .catch(errorHandler)
 };
 btnTranslate.addEventListener("click", clickHandler);
 

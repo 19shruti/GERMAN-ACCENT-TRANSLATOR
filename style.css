@@ -1,5 +1,25 @@
+body.html{
+    height: 100%;
+}
+.heading{
+    color: rgb(32, 24, 32);
+   text-align: center;
+}
 body{
     background-color: aqua;
+   background-image: url(images/ae.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+/* #backg.image{
+    position:absolute ;
+} */
+
+.heading{
+    font-size: 3.5rem;
+    font-family: cursive;
 }
 textarea{
     text-decoration: rgb(184, 204, 8);
@@ -10,11 +30,20 @@ textarea{
     height: 10vsh;
 }
 #OUTPUT{
-    border: 1px solid black;
+    border: 1px solid rgb(15, 15, 15) ;
     width: 90%;
     display: block;
     padding: 0.9rem;
     height: 10vh;
     margin: 1%;
-    
+    color: rgb(14, 12, 9);
+    font-size: 1.6rem;
+    font-family: monospace;   
+}
+#btn-translate{
+    border: 2px solid rgb(12, 12, 12);
+    padding: 10px,24px;
+}
+.about-germany{
+    color:rgb(56, 28, 56);
 }
