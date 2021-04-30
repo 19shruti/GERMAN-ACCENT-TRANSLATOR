@@ -7,10 +7,11 @@ body.html{
 }
 body{
     background-color: aqua;
-   background-image: url(images/ae.jpg);
+   background-image: url(images/aet.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
+   border:5px solid black;
 }
 
 /* #backg.image{
@@ -43,8 +44,16 @@ textarea{
 #btn-translate{
     border: 2px solid rgb(12, 12, 12);
     padding: 10px,24px;
-    
+
 }
 .about-germany{
     color:rgb(56, 28, 56);
+}
+.jh{
+    line-height: 70%;
+    text-align: end;
+    padding: 10px 10px 10px 10px; 
+    bottom: 0;
+    width: 90%;
+    position: fixed;
 }
